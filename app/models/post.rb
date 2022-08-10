@@ -1,6 +1,7 @@
 class Post < ApplicationRecord
 
-  # ***** 以下を追加 *****
+  #ここの二行を追加（できていないけど）
+
   validates :title, presence: true, length: { maximum: 50 }
   validates :content, presence: true, length: { maximum: 500 }
 
