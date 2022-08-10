@@ -16,4 +16,16 @@ class PostsController < ApplicationController
     # 下記記述で、投稿詳細ページにリダイレクト(自動的に転送)させる
     redirect_to post
   end
+
+  def edit
+  end
+
+  def update
+  end
+
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy!
+    redirect_to root_path
+  end
 end
